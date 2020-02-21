@@ -31,9 +31,9 @@ def lalala(message):
 			item3 = types.InlineKeyboardButton("Середа", callback_data='3')
 			item4 = types.InlineKeyboardButton("Четверг", callback_data='4')
 			item5 = types.InlineKeyboardButton("П'ятница", callback_data='5')
-			item5 = types.InlineKeyboardButton("Ввесь тиждень", callback_data='1ALL')
+			item6 = types.InlineKeyboardButton("Ввесь тиждень", callback_data='1ALL')
 
-			markup.add(item1, item2, item3, item4, item5)
+			markup.add(item1, item2, item3, item4, item5, item6)
 
 			bot.send_message(message.chat.id, "Який день???", reply_markup=markup)
 		elif message.text == "2":
@@ -45,9 +45,9 @@ def lalala(message):
 			item3 = types.InlineKeyboardButton("Середа", callback_data='8')
 			item4 = types.InlineKeyboardButton("Четверг", callback_data='9')
 			item5 = types.InlineKeyboardButton("П'ятница", callback_data='10')
-			item5 = types.InlineKeyboardButton("Ввесь тиждень", callback_data='2ALL')
+			item6 = types.InlineKeyboardButton("Ввесь тиждень", callback_data='2ALL')
 
-			markup.add(item1, item2, item3, item4, item5)
+			markup.add(item1, item2, item3, item4, item5, item6)
 
 			bot.send_message(message.chat.id, "Який день???", reply_markup=markup)
 		else:

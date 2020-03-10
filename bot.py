@@ -59,7 +59,8 @@ def callback_inline(call):
 
 		if call.message:
 			if call.data == '1':
-				bot.send_message(call.message.chat.id, 'Понеділок:\n1 ПАРА:\n2 ПАРА: Вишка--АУДИТОРІИЯ: 3.120\n3 ПАРА: Вишка(Л)--АУДИТОРІИЯ: 3.120\n4 ПАРА:')
+				a=time.strftime("%H:%M",time.localtime())
+				bot.send_message(call.message.chat.id, a+'\n Понеділок:\n1 ПАРА:\n2 ПАРА: Вишка--АУДИТОРІИЯ: 3.120\n3 ПАРА: Вишка(Л)--АУДИТОРІИЯ: 3.120\n4 ПАРА:')
 			elif call.data == '2':
 				bot.send_message(call.message.chat.id, 'Вівторок:\n1 ПАРА:\n2 ПАРА: Історія--АУДИТОРІИЯ: 3.112\n3 ПАРА: Електромех-АУДИТОРІИЯ: 10.104\n4 ПАРА: Фіз-ра')
 			elif call.data == '3':

@@ -1,6 +1,6 @@
 import telebot
 import config
-import random
+import time
 
 from telebot import types
 
